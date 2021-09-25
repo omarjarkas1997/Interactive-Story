@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 String name = nameField.getText().toString();
-                startStory();
+                startStory(name);
             }
         });
     }
