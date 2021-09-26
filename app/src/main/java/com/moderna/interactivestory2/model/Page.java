@@ -6,11 +6,12 @@ public class Page {
     // Each page will contain two choices
     private Choice choice1;
     private Choice choice2;
-
+    private boolean isFinalPage = false;
 
     public Page(int imageId, int textId){
         this.imageId = imageId;
         this.textId = textId;
+        this.isFinalPage = true;
     }
 
     public Page(int imageId, int textId, Choice choice1, Choice choice2) {
@@ -52,6 +53,13 @@ public class Page {
         this.choice2 = choice2;
     }
 
+    public boolean isFinalPage() {
+        return isFinalPage;
+    }
+
+    public void setFinalPage(boolean finalPage) {
+        isFinalPage = finalPage;
+    }
 
 
 
